@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -8,17 +8,27 @@
 html, body{
     height: 100vh;
     width: 100vw;
-    background: url(../imagens/fundo-madeira.jpg) no-repeat top center fixed ;
-    background-size: cover;
+}
+
+body{
+    background-color: black;
 }
 
 main{
     position: relative;
-    height: 100vh; 
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 section#celular{
     position: absolute;
+
     top: 50%;
     left: 50%;
 
@@ -29,29 +39,41 @@ section#celular{
     height: 627px;
 }
 
-iframe#tela{
-    position: relative;
-    top: 80px;
-    left: 21px;
+section#celular > iframe{
+    position: absolute;
 
-    width: 265px;
-    height: 469px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 269px;
+    height: 476px;
+
+    
 }
 
-section#redes-sociais{
-    text-align: right;
+section#redesocial{
+    text-align: center;
 }
 
-section#redes-sociais img{
+section#redesocial img{
+    margin-top: 25px;
     width: 60px;
-    margin: 10px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+    display: inline-block;
+    box-shadow: 1px 1px 10px black;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-section#redes-sociais img:hover{
-    border: 2px solid rgba(255, 255, 255, 0.692);
+section#redesocial img:hover{
+    border: 1.5px solid white;
     transform: translate(-3px, -3px);
-    transition: 0.2s;
-    box-shadow: 4px 4px 10px black;
+
+    transition: .6s;
+    
 }
+
+
+
