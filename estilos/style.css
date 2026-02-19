@@ -25,8 +25,9 @@ main{
     height: 100vh;
 
     background-image: url(../imagens/fundo-madeira.jpg);
-    background-size: cover;
+    
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
